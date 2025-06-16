@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Invoice Generator">
+        <p class="slds-p-around_medium">
+            <template if:true={lastRun}>
+                Last Run: {lastRun.Run_Time__c} <br/>
+                Success: {lastRun.Success__c}
+            </template>
+        </p>
+        <lightning-button label="Run Now" onclick={handleRunNow}></lightning-button>
+    </lightning-card>
+</template>
